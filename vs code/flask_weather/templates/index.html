@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+        <style>
+            .wheathers {
+                display: flex;
+                justify-content: space-between;
+            }
+            .day {
+                padding: 10px;
+            }
+            
+            .date_day {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/" method="post">
+            <label for="location">Please enter city</label>
+            <input type="text" name="location">
+            <input type="submit" value="Enter">
+        </form>
+        <h1>{{data['location']['name']}}</h1>
+        <div class="wheathers">
+            {% for item in data['forecast']['forecastday'] %}
+                <div class="day">
+                    <div class="date_day">{{ item['date'] }}</div>
+                    <div>Max - {{ item['day']['maxtemp_c'] }}</div>
+                    <div>Min - {{ item['day']['mintemp_c'] }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

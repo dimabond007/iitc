@@ -1,0 +1,14 @@
+<section class='section_hero_home'>
+    <img src='{{ url_for('static', filename='images/'+image_hero) }}'  id="fixedImage"/>
+    {% if content_hero %}
+        <div class="background_hero"><div>{{content_hero}}</div></div>
+    {% endif %}
+</section>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        var image = document.getElementById('fixedImage');
+        image.style.transform = 'translate3d(0px, ' + scrollPosition/2 + 'px, 0px)';
+      });
+</script>

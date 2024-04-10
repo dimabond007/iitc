@@ -1,0 +1,12 @@
+/* RESET */
+
+body{
+    margin: 0;
+}
+
+/* NAV BAR  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    padding: 50px;
+    font-size: 14pt;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Gentium Plus", serif;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+    background-color: #323232;
+}
+
+.btn{
+    display: block;
+    background: white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgba(55, 71, 79, 1);
+    padding: 7px;
+}
+.section_v{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app_h1{
+    font-size: 24.0pt;
+}
+
+.link_btn {
+    color: white;
+    font-size: 15pt;
+}
+
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content{
+    width: 100%;
+}
+
+#fixedImage {
+    transform: translate3d(0, 0, 0); /* Инициализация transform */
+}
+
+main {
+    display: flex;
+}
+
+.header {
+    padding-inline: 40px;
+    background-color: black;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header ul{
+    font-weight: 300;
+}
+
+.header ul li{
+    padding-block: 12px;
+}
+
+.home_link {
+    font-size: 19pt;
+    font-weight: 300;
+    padding-block: 50px;
+}
+
+.section_hero_home{
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+}
+
+.background_hero{
+    position: absolute;
+    top: 0;
+    background: #2121218a;
+    height: 100%;
+    width: 100%;
+    font-size: 64pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leistungen_block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+.leistungen_block_text{
+    flex:3
+}
+
+.leistungen_block_img{
+    flex:2
+}
+
+.leistungen_block ul li {
+    padding-block: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leistungen_block ul li::before {
+    content: ''; 
+    display: inline-block; 
+    width: 6px;
+    height: 6px; 
+    background-color: white;
+    margin-right: 5px;
+    vertical-align: middle; 
+    min-width: 6px;
+  }
+  
+  .leistungen_block_text_first{
+    padding-bottom: 50px;
+  }
+  
+  .leistungen_block_text_second{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
