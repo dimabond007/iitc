@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра на соответствие цифр</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="lives">❤️ <span id="livesCount">5</span></div>
+            <div class="mistakes">Ошибки: <span id="mistakesCount">0</span></div>
+            <div class="level">Уровень <span id="levelCount">15</span></div>
+        </div>
+        <div class="game-board" id="gameBoard">
+            <!-- Здесь будут динамически добавлены кнопки с числами -->
+        </div>
+        <div class="game-footer">
+            <button id="hintButton">Подсказка</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
